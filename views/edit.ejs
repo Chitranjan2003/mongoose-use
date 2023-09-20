@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../stylesheets/style.css">
+</head>
+<body>
+     <div id="main">
+        <h1>Update Account</h1>
+        <form action="/updated/<%=foundeduser._id%>" method="post">
+            <input type="url" placeholder="image" name="image"  value="<%=foundeduser.image%>"  >
+             <input type="text" placeholder="username" name="username"value="<%=foundeduser.username%>">
+             <input type="text" placeholder="age" name="age"value="<%=foundeduser.age%>">
+             <input type="text" placeholder="contact" name="contact"value="<%=foundeduser.contact%>">
+             <input type="text" placeholder="about" name="about"value="<%=foundeduser.about%>">
+              <input id="btn" type="submit"  value="update">
+           </form> 
+     </div>
+</body>
+</html>
